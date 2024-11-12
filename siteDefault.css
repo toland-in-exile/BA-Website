@@ -1,0 +1,40 @@
+body {
+    background-color: azure;
+    margin: 0;
+}
+
+#sideBar {
+    background-color: gray;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 80%;
+    border: 5px solid black;
+}
+
+#indexHeader {
+    background-color: blue;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    border: 0px;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    border: 5px solid black;
+}
+
+#navBar table {
+    width: 30%;
+}
+
+#navBar h1, a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aqua;
+    text-decoration: none;
+}
+
+#title {
+    color: aqua;
+}
