@@ -1,32 +1,75 @@
 body {
-    background-color: azure;
+    background: linear-gradient(to bottom right, #2669ac, #031c61);
     margin: 0;
+    height: 100vh;
 }
 
 #sideBar {
-    background-color: gray;
+    background: linear-gradient(to bottom, silver, rgb(87, 86, 86));
     width: 20%;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 80%;
+    border-radius: 0 15px 15px 0;
     border: 5px solid black;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#sideBar img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: conatin;
+}
+
+#quoteTag {
+    color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#quoteContainer p {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+    color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    padding: 0 20px;
+    margin: 20px 10px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
 }
 
 #indexHeader {
-    background-color: blue;
-    width: 100%;
+    background: rgb(32, 32, 32);
     margin: 0;
     padding: 0px;
     border: 0px;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 20%;
+    left: 40%;
+    right: 20%;
     border: 5px solid black;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #navBar table {
-    width: 30%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #navBar h1, a {
