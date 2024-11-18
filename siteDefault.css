@@ -28,6 +28,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2em;
     text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #quoteContainer p {
@@ -43,6 +44,7 @@ body {
     overflow-wrap: break-word;
     width: calc(100% - 40px);
     box-sizing: border-box;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #indexHeader {
@@ -76,8 +78,31 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: aqua;
     text-decoration: none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #title {
     color: aqua;
+}
+
+#usable {
+    position:absolute;
+    top: 20%;
+    left: 30%;
+    right: 10%;
+    /*
+    Border property to help with debugging position
+    border: 5px solid black;
+    */
+}
+
+#usable h1, p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    color: aqua;
+    text-decoration: none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
 }

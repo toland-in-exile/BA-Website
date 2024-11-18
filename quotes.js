@@ -25,7 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const quoteElement = document.querySelector('#quoteContainer p');
     
     function fadeQuote() {
-        setInterval(() => {
+        // Set initial quote
+        quoteElement.textContent = quotes[Math.floor(Math.random() * quotes.length)];
+        
+        function updateQuote() {
             // Fade out
             quoteElement.style.opacity = '0';
             
@@ -36,8 +39,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 quoteElement.style.opacity = '1';
             }, 2000);
             
-        }, 8000);
+            /*
+            Debuging code
+            console.log("Current quote:", quoteElement.textContent);
+            console.log("Word count:", quoteElement.textContent.split(/\s+/).length);
+            console.log("Duration:", quoteElement.textContent.split(/\s+/).length * 500);
+            */
+
+            // Calculate next duration based on current quote length
+            let quoteDur = (quoteElement.textContent.split(/\s+/)).length * 500;
+            setTimeout(updateQuote, quoteDur);
+        }
+        
+        updateQuote();
     }
     
     fadeQuote();
 });
+
+
