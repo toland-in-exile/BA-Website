@@ -1,13 +1,3 @@
-/*
-        <img src="Assets/logo!.png" alt="BA Flag">
-        <p id="quoteTag">Quotes:</p>
-        <div  id="quoteContainer">
-            <p></p>
-        </div>
-        <p style="position: absolute; width: 92%; bottom: 5px; left: 4%; word-wrap: break-word">Website by <a href="aboutMe.html"><u>Bradley, Phillip D.</u></a></p>
-        <!--list of games we play, possibly using the steam API to auto-pop for a BA steam group or such
-        BA dish of the week w/ link to cookbook page-->
-*/
 const page = document;
 const sideBar = page.getElementById("sideBar");
 
